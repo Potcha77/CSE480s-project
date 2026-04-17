@@ -1,0 +1,7 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+img = np.zeros((256,256))
+img[50:200, 60:180] = 1
+
+plt.imsave("images/test.png", img, cmap="gray")
